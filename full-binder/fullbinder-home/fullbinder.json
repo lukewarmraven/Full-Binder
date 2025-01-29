@@ -1,0 +1,119 @@
+[
+    {
+        "groupName":"BSS",
+        "album":
+        [{
+            "albumTitle":"Teleparty",
+            "version":
+            [{
+                "versionName":"Standard Version",
+                "members":
+                [{
+                    "name":"DK",
+                    "photocards":
+                    [{
+                        "image":"link1",
+                        "desc":"DK 1"
+                    },
+                    {
+                        "image":"link2",
+                        "desc":"DK 2"
+                    },
+                    {
+                        "image":"link3",
+                        "desc":"DK 3"
+                        
+                    }] 
+                },
+                {
+                    "name":"Hoshi",
+                    "photocards":
+                    [{
+                        "image":"link1",
+                        "desc":"DK 1"
+                    },
+                    {
+                        "image":"link2",
+                        "desc":"DK 2"
+                    },
+                    {
+                        "image":"link3",
+                        "desc":"DK 3"
+                        
+                    }]
+                },
+                {
+                    "name":"Seungkwan",
+                    "photocards":
+                    [{
+                        "image":"link1",
+                        "desc":"DK 1"
+                    },
+                    {
+                        "image":"link2",
+                        "desc":"DK 2"
+                    },
+                    {
+                        "image":"link3",
+                        "desc":"DK 3"
+                        
+                    }]
+                }]
+            },
+            {
+                "versionName":"Weverse Version",
+                "members":
+                [{
+                    "name":"DK",
+                    "photocards":
+                    [{
+                        "image":"link1",
+                        "desc":"DK 1"
+                    },
+                    {
+                        "image":"link2",
+                        "desc":"DK 2"
+                    },
+                    {
+                        "image":"link3",
+                        "desc":"DK 3"
+                        
+                    }] 
+                },
+                {
+                    "name":"Hoshi",
+                    "photocards":
+                    [{
+                        "image":"link1",
+                        "desc":"DK 1"
+                    },
+                    {
+                        "image":"link2",
+                        "desc":"DK 2"
+                    },
+                    {
+                        "image":"link3",
+                        "desc":"DK 3"
+                        
+                    }]
+                },
+                {
+                    "name":"Seungkwan",
+                    "photocards":
+                    [{
+                        "image":"link1",
+                        "desc":"DK 1"
+                    },
+                    {
+                        "image":"link2",
+                        "desc":"DK 2"
+                    },
+                    {
+                        "image":"link3",
+                        "desc":"DK 3"
+                    }]
+                }]
+            }]
+        }]
+    }
+]

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fullbinder.css">
+    <title>Full Binder</title>
+    <link rel="icon" href="../assets/card.png">
+    
+    <!-- SNIGLET FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lexend:wght@100..900&family=Sniglet:wght@400;800&family=Ultra&display=swap" rel="stylesheet">
+    <script src="fullbinder.js"></script>
+</head>
+<body>
+    <header>
+        <div class="headerGroup">
+            <a class="headerForm" href="fullbinder.html">
+                <img src="../assets/card.png" alt="FullBinderLogo" class="headerImg">
+                <div class="headerTitle">Full Binder</div>
+            </a>
+        </div>
+            
+        <ul class="headerList">
+            <a href="/activities/full-binder/fullbinder-home/fullbinder.html" class="homeHeader"> <li>Home</li> </a>
+            <a href="/activities/full-binder/fullbinder-home/fullbinder.html#groupTitle" class="shopHeader"> <li>Shop</li></a>
+            <a href="../contacts/contacts.html" class="contactsHeader"> <li>Contacts</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <!--
+        - catalog for items - div.catalogMain
+            - add to cart button on each item
+            - window pane for more item details
+            - sorting feature
+        - cart feature - div.cartMain
+            - add or delete items in the cart
+        -->
+        <div class="contentHeader">
+            <div class="contentHeaderTitle">FULLBINDER</div>
+        </div>
+
+        <div class="catalogMain">
+            <div class="catalogTop">
+                <div class="groupTitle" id="groupTitle">BSS (SEVENTEEN)</div>
+            </div>
+
+<!-- ###################################### STANDARD VERSION ######################################## -->
+            <div class="version" id="albumVersion">TELEPARTY (2025)</div>
+            <div class="tabs">
+                <button class="tab-link-std active" onclick="openTabstd(event, 'Tab1-std')">HOSHI</button>
+                <button class="tab-link-std" onclick="openTabstd(event, 'Tab2-std')">DK</button>
+                <button class="tab-link-std" onclick="openTabstd(event, 'Tab3-std')">SEUNGKWAN</button>
+            </div>
+
+            <div class="tabcontentMain">
+                <div id="Tab1-std" class="tab-content-std active">
+                    
+                    <div class="tab1">
+                        <div class="gaVer">
+                            <div class="versionName">GA Version</div>
+                            <div class="items">
+                                <div class="pc">
+                                    <img src="../assets/ga-ver/hs1.jpg" alt="">
+                                    <div class="desc">HOSHI 1</div>
+                                    <div class="price">P 200.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>   
+                                </div>
+                                <div class="pc">
+                                    <img src="../assets/ga-ver/hs2.jpg" alt="">
+                                    <div class="desc">HOSHI 2</div>
+                                    <div class="price">P 200.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>
+                                </div> 
+                            </div>                             
+                        </div>
+
+                        <div class="naVer">
+                            <div class="versionName">NA Version</div>
+                            <div class="items">
+                                <div class="pc">
+                                    <img src="../assets/na-ver/hs1.jpg" alt="">
+                                    <div class="desc">HOSHI 1</div>
+                                    <div class="price">P 200.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>
+                                </div>
+                                <div class="pc">
+                                    <img src="../assets/na-ver/hs2.jpg" alt="">
+                                    <div class="desc">HOSHI 2</div>
+                                    <div class="price">P 200.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    
+
+                </div>
+                <div id="Tab2-std" class="tab-content-std">
+                    <div class="tab2">
+                        <div class="gaVer">
+                            <div class="versionName">GA Version</div>
+                            <div class="items">
+                                <div class="pc">
+                                    <img src="../assets/ga-ver/dk1.jpg" alt="">
+                                    <div class="desc">DK 1</div>
+                                    <div class="price">P 200.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>   
+                                </div>
+                                <div class="pc">
+                                    <img src="../assets/ga-ver/dk2.jpg" alt="">
+                                    <div class="desc">DK 2</div>
+                                    <div class="price">P 200.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>
+                                </div> 
+                            </div>                             
+                        </div>
+
+                        <div class="naVer">
+                            <div class="versionName">NA Version</div>
+                            <div class="items">
+                                <div class="pc">
+                                    <img src="../assets/na-ver/dk1.jpg" alt="">
+                                    <div class="desc">DK 1</div>
+                                    <div class="price">P 200.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>
+                                </div>
+                                <div class="pc">
+                                    <img src="../assets/na-ver/dk2.jpg" alt="">
+                                    <div class="desc">DK 2</div>
+                                    <div class="price">P 200.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+
+
+                </div>
+                <div id="Tab3-std" class="tab-content-std">
+                    <div class="tab3">
+                        <div class="gaVer">
+                            <div class="versionName">GA Version</div>
+                            <div class="items">
+                                <div class="pc">
+                                    <img src="../assets/ga-ver/sk1.jpg" alt="">
+                                    <div class="desc">SEUNGKWAN 1</div>
+                                    <div class="price">P 200.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>   
+                                </div>
+                                <div class="pc">
+                                    <img src="../assets/ga-ver/sk2.jpg" alt="">
+                                    <div class="desc">SEUNGKWAN 2</div>
+                                    <div class="price">P 200.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>
+                                </div> 
+                            </div>                             
+                        </div>
+
+                        <div class="naVer">
+                            <div class="versionName">NA Version</div>
+                            <div class="items">
+                                <div class="pc">
+                                    <img src="../assets/na-ver/sk1.jpg" alt="">
+                                    <div class="desc">SEUNGKWAN 1</div>
+                                    <div class="price">P 200.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>
+                                </div>
+                                <div class="pc">
+                                    <img src="../assets/na-ver/sk2.jpg" alt="">
+                                    <div class="desc">SEUNGKWAN 2</div>
+                                    <div class="price">P 200.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+
+
+
+<!-- ###################################### SECOND WIND STANDARD VERSION ############################ -->
+            <div class="version" id="albumVersion">SECOND WIND (2023)</div>
+            <div class="tabs">
+                <button class="tab-link-wev active" onclick="openTabwev(event, 'Tab1-wev')">HOSHI</button>
+                <button class="tab-link-wev" onclick="openTabwev(event, 'Tab2-wev')">DK</button>
+                <button class="tab-link-wev" onclick="openTabwev(event, 'Tab3-wev')">SEUNGKWAN</button>
+            </div>
+
+            <div class="tabcontentMain">
+                <div id="Tab1-wev" class="tab-content-wev active">
+                    <div class="tab1">
+                        <div class="gaVer">
+                            <div class="versionName">Standard Version</div>
+                            <div class="items">
+                                <div class="pc">
+                                    <img src="../assets/second-wind/hs1.jpg" alt="">
+                                    <div class="desc">HOSHI 1</div>
+                                    <div class="price">P 250.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>   
+                                </div>
+                                <div class="pc">
+                                    <img src="../assets/second-wind/hs2.jpg" alt="">
+                                    <div class="desc">HOSHI 2</div>
+                                    <div class="price">P 250.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>
+                                </div> 
+                            </div>                             
+                        </div>
+
+   
+                    </div>
+                </div>
+
+                <div id="Tab2-wev" class="tab-content-wev">
+                    <div class="tab2">
+                        <div class="gaVer">
+                            <div class="versionName">Standard Version</div>
+                            <div class="items">
+                                <div class="pc">
+                                    <img src="../assets/second-wind/dk1.jpg" alt="">
+                                    <div class="desc">DK 1</div>
+                                    <div class="price">P 250.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>   
+                                </div>
+                                <div class="pc">
+                                    <img src="../assets/second-wind/dk2.jpg" alt="">
+                                    <div class="desc">DK 2</div>
+                                    <div class="price">P 250.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>
+                                </div> 
+                            </div>                             
+                        </div>
+                    </div> 
+
+                </div>
+                <div id="Tab3-wev" class="tab-content-wev">
+                    <div class="tab3">
+                        <div class="gaVer">
+                            <div class="versionName">Standard Version</div>
+                            <div class="items">
+                                <div class="pc">
+                                    <img src="../assets/second-wind/sk1.jpg" alt="">
+                                    <div class="desc">SEUNGKWAN 1</div>
+                                    <div class="price">P 250.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>   
+                                </div>
+                                <div class="pc">
+                                    <img src="../assets/second-wind/sk2.jpg" alt="">
+                                    <div class="desc">SEUNGKWAN 2</div>
+                                    <div class="price">P 250.00</div>
+                                    <div class="quantity-selector">
+                                        <input type="number" id="quantity" value="0" min="0" step="1" />
+                                        <button class="cart-btn" onclick="submitQuantity()"><img src="../assets/add-cart.png" alt="add-to-cart button"></button>
+                                    </div>
+                                </div> 
+                            </div>                             
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+        
+        <div class="lower-btn">
+            <a href="/activities/purchase order form/form.html">
+                <button type="submit" class="submit-btn">Checkout</button>
+            </a>
+        </div>
+        
+        </div> <!-- catalogMain end-->
+    </main>
+
+    <footer>
+        <div class="footerMessage">BSIT 3-5 - 2025</div>
+        <p>Contacts</p>
+        <!-- logos of all the contacts in here -->
+        <a target="_blank" href="https://www.facebook.com/ravenluke.quinto"><img class="contacts" src="../assets/facebook.png"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/quintoravenluke"><img class="contacts" src="../assets/linkedin.png"></a>
+        <a target="_blank" href="https://github.com/lukewarmraven"><img class="contacts" src="../assets/github.png"></a>
+    </footer>
+</body>
+</html>

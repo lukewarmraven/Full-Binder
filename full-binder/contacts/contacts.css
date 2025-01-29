@@ -1,0 +1,202 @@
+:root{
+    --white: #e1e3e8c9;
+    --color-catalogMain: #f9ffcf;
+    --color-yellow1: #FADF63;
+    --color-green1: #394f49;
+    --color-red1: #632b30;
+    --inputwidth: 50%;
+    --fieldsWidth: 100%;
+    --roundMain: 0.5em;
+    --roundSub: 0.3em;
+    --mainFont: "Sniglet";
+}
+html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background-image: url("../assets/bss-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-color: var(--white);
+    font-family: "Sniglet";
+}
+/*########################################## HEADER #################################################*/
+body header{
+    display: flex;
+    height: 20%;
+    z-index: 10;
+    padding: 0 1%;
+    background-color: var(--color-yellow1);
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+
+}
+.headerImg{
+    width: 9%;
+    height: auto;
+    float: left;
+    margin-right: 2%;
+}
+.headerList{
+    display: flex;
+    margin: 0 10%;
+    justify-content: flex-start;
+    gap: 1%;
+}
+.headerGroup{
+    align-content: center;
+    justify-content: center;
+    padding-left: 5%;
+}
+.headerTitle{
+    padding-top: 1.75%;
+    align-items: center;
+    justify-items: center;
+    white-space: nowrap;
+}
+.headerForm, .headerList{
+    padding: 0 10%;
+    font-size: 1.5vw;
+}
+.headerForm,.homeHeader,.shopHeader,.contactsHeader{
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    line-height: 1.5;
+    transition: font-weight 0.2s ease;
+}
+.headerForm,.homeHeader,.shopHeader,.contactsHeader, a:visited{
+    color: black;
+}
+header a{
+    display: block;
+    padding: 10% 20%;
+}
+.homeHeader:hover, .shopHeader:hover, .contactsHeader:hover{
+    background-color: white;
+    font-weight: bold;
+    line-height: 1.5;
+    transition: font-weight 0.2s ease;
+}
+.headerForm:hover{
+    font-weight: bold;
+}
+
+/*########################################## FOOTER #################################################*/
+footer{
+    background-color: #FADF63;
+    height: 5%;
+    padding-bottom: 1%;
+    text-align: center;
+
+    z-index: 10;
+
+    font-family: var(--fontfamily);
+    font-size: 0.75rem;
+    color: black;
+}
+.contacts{
+    display: inline-block;
+    height: 26px;
+    margin: auto;
+}
+.contacts:hover{
+    transform: scale(1.1);
+}
+.footerMessage{
+    margin: 1% 0;
+}
+
+/*######################### MAIN #############################*/
+body main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3% 5%;
+
+    flex: 1;
+
+    width: 100%;
+}
+
+/*######################### contentHeader #############################*/
+.contentHeader {
+    display: flex;
+    flex-direction: column;
+    height: 50em;
+    width: 90%; 
+    max-width: 90%;
+    margin: 2% auto; 
+    background-color: var(--color-catalogMain);
+    background-image: url("/activities/full-binder/assets/bss-header.jpeg");
+    background-position: center;
+    background-size: cover;
+    padding: 2%;
+    border-radius: var(--roundMain); 
+
+    justify-content: center;
+    align-items: center;
+}
+.contentHeaderTitle{
+    font-size: 10vw;
+    font-weight: bold;
+    color: var(--color-catalogMain);
+    text-shadow: 
+    -2px -2px 0 black,  
+    2px -2px 0 black,  
+    -2px  2px 0 black,  
+    2px  2px 0 black; /* Creates a black outline */
+    margin: 0;
+    position: relative;
+    top: 5%;
+}
+.aboutText{
+    position: relative;
+    top: 2%;
+    margin-bottom: 5%;
+    font-size: 1.4vw;
+    color: white;
+    text-shadow: 
+    -2px -2px 0 black,  
+    2px -2px 0 black,  
+    -2px  2px 0 black,  
+    2px  2px 0 black; /* Creates a black outline */
+}
+.contactsText{
+    font-size: 1.4vw;
+    color: white;
+    text-shadow: 
+    -2px -2px 0 black,  
+    2px -2px 0 black,  
+    -2px  2px 0 black,  
+    2px  2px 0 black; /* Creates a black outline */
+    margin-bottom: 2%;
+}
+.contactsButton{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    filter: invert(100%);   
+    transform: scale(1.5);
+}
+.contactsButton a{
+    margin: 0 2%;
+}
